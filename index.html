@@ -32,6 +32,7 @@
 		</form>
 	</div>
 	<div id="result" style="margin-top:10px;margin-left:10px; font-size: 20px; color:red;">
+		
 	</div>
 	
 	<script>
@@ -72,7 +73,8 @@
 				
 			   	var tmpConved = tmpConv(t,u);
 
-				alert("Temperature is "+tmpConved.t1+" in "+tmpConved.u1);
+				// alert("Temperature is "+tmpConved.t1+" in "+tmpConved.u1);
+				$('#result').text("Temperature is " +tmpConved.t1+ " in " + tmpConved.u1 );
 			});
 		});
 	</script>
